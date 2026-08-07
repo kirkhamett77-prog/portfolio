@@ -23,21 +23,7 @@
   </header>
 
   <main id="top">
-    <!-- Hero: 브랜드 + 한 줄 + CTA + 풀블리드 이미지 -->
-    <section class="hero" aria-label="소개">
-      <div class="hero-media" role="img" aria-label="디자인 작업 공간"></div>
-      <div class="hero-content">
-        <p class="brand">Hyunwoo</p>
-        <h1>Web App Designer</h1>
-        <p class="lede">사용이 ㅇㄹㅇㄹ자연스러운 제품 경험을 설계합니다.</p>
-        <div class="cta-group">
-          <a class="btn btn-fill" href="#work">View Work</a>
-          <a class="btn btn-line" href="#contact">Contact</a>
-        </div>
-      </div>
-    </section>
 
-    <!-- Work: 아임웹형 2열 이미지 그리드 / 새 작업은 .work-item 복붙 -->
     <section id="work" class="section work">
       <div class="section-bar">
         <h2>Work</h2>
@@ -45,76 +31,399 @@
       </div>
 
       <ul class="work-grid">
-        <!-- ===== 새 프로젝트: 이 블록을 복사해서 추가 ===== -->
-        <li class="work-item">
-          <a class="work-card" href="#">
+        <!--
+          [Work 추가]
+          1) images 폴더에 이미지 넣기
+          2) <li> 복사 후 data-* 수정 (팝업 슬라이드: data-images)
+          3) 썸네일은 css/style.css 에서 .work-thumb-N 배경으로 등록
+             HTML: class="work-thumb work-thumb-N"
+        -->
+        <li
+          class="work-item"
+          data-title="Orbit Pay"
+          data-category="Mobile App"
+          data-images="images/sample-01.svg, images/sample-02.svg, images/sample-03.svg"
+          data-desc="모바일 결제 플로우를 단순화한 제품 디자인입니다. 온보딩부터 송금 완료까지 핵심 경로를 줄이고, 상태 피드백을 명확히 설계했습니다."
+          data-tools="포토샵,피그마,HTML,AI"
+          data-period="2025.05 ~ 2025.08"
+          data-role="디자인,퍼블"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
             <span class="work-thumb work-thumb-1" aria-hidden="true"></span>
             <span class="work-info">
-              <span class="work-title">Orbit Pay</span>
-              <span class="work-cat">Product · Mobile</span>
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
             </span>
-          </a>
+          </button>
         </li>
-        <!-- ===== /새 프로젝트 ===== -->
 
-        <li class="work-item">
-          <a class="work-card" href="#">
+        <li
+          class="work-item"
+          data-title="Nova Desk"
+          data-category="Mobile App"
+          data-images="images/sample-04.svg, images/sample-05.svg, images/sample-02.svg"
+          data-desc="SaaS 대시보드의 정보 구조를 재정리하고, 자주 쓰는 액션을 전면에 배치한 웹앱 UI입니다."
+          data-tools="피그마,HTML,CSS"
+          data-period="2025.01 ~ 2025.04"
+          data-role="디자인"
+          data-upgrade="O"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
             <span class="work-thumb work-thumb-2" aria-hidden="true"></span>
             <span class="work-info">
-              <span class="work-title">Nova Desk</span>
-              <span class="work-cat">SaaS · Web App</span>
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
             </span>
-          </a>
+          </button>
         </li>
 
-        <li class="work-item">
-          <a class="work-card" href="#">
+        <li
+          class="work-item"
+          data-title="Leaf Care"
+          data-category="Mobile App"
+          data-images="images/sample-03.svg, images/sample-06.svg, images/sample-01.svg"
+          data-desc="케어 서비스의 예약·상담 과정을 한 흐름으로 연결한 UX 설계 프로젝트입니다."
+          data-tools="피그마,일러스트레이터"
+          data-period="2024.09 ~ 2024.12"
+          data-role="디자인"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
             <span class="work-thumb work-thumb-3" aria-hidden="true"></span>
             <span class="work-info">
-              <span class="work-title">Leaf Care</span>
-              <span class="work-cat">Service · UX</span>
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
             </span>
-          </a>
+          </button>
         </li>
 
-        <li class="work-item">
-          <a class="work-card" href="#">
+        <li
+          class="work-item"
+          data-title="Studio Line"
+          data-category="Mobile App"
+          data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
+          data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
+          data-tools="피그마,포토샵,프리미어"
+          data-period="2024.05 ~ 2024.08"
+          data-role="디자인,퍼블"
+          data-upgrade="O"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
             <span class="work-thumb work-thumb-4" aria-hidden="true"></span>
             <span class="work-info">
-              <span class="work-title">Studio Line</span>
-              <span class="work-cat">Brand · UI</span>
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
             </span>
-          </a>
+          </button>
         </li>
+
+        <li
+        class="work-item"
+        data-title="Studio Line"
+        data-category="Web · UI/UX"
+        data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
+        data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
+        data-tools="피그마,포토샵,프리미어"
+        data-period="2024.05 ~ 2024.08"
+        data-role="디자인,퍼블"
+        data-upgrade="O"
+      >
+        <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+          <span class="work-thumb work-thumb-5" aria-hidden="true"></span>
+          <span class="work-info">
+            <span class="work-title"></span>
+            <span class="work-cat"></span>
+          </span>
+        </button>
+      </li>
+
+      <li
+      class="work-item"
+      data-title="Studio Line"
+      data-category="Web · UI/UX"
+      data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
+      data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
+      data-tools="피그마,포토샵,프리미어"
+      data-period="2024.05 ~ 2024.08"
+      data-role="디자인,퍼블"
+      data-upgrade="O"
+    >
+      <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+        <span class="work-thumb work-thumb-6" aria-hidden="true"></span>
+        <span class="work-info">
+          <span class="work-title"></span>
+          <span class="work-cat"></span>
+        </span>
+      </button>
+    </li>
+    <li
+    class="work-item"
+    data-title="Studio Line"
+    data-category="Web · UI/UX"
+    data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
+    data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
+    data-tools="피그마,포토샵,프리미어"
+    data-period="2024.05 ~ 2024.08"
+    data-role="디자인,퍼블"
+    data-upgrade="O"
+  >
+    <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+      <span class="work-thumb work-thumb-7" aria-hidden="true"></span>
+      <span class="work-info">
+        <span class="work-title"></span>
+        <span class="work-cat"></span>
+      </span>
+    </button>
+  </li>
+
+  <li
+  class="work-item"
+  data-title="Studio Line"
+  data-category="Web · UI/UX"
+  data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
+  data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
+  data-tools="피그마,포토샵,프리미어"
+  data-period="2024.05 ~ 2024.08"
+  data-role="디자인,퍼블"
+  data-upgrade="O"
+>
+  <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+    <span class="work-thumb work-thumb-8" aria-hidden="true"></span>
+    <span class="work-info">
+      <span class="work-title"></span>
+      <span class="work-cat"></span>
+    </span>
+  </button>
+</li>
+
+<li
+class="work-item"
+data-title="Tous les Jours"
+data-category="Web · Content - 2019 ~ 2022"
+data-images="images/jo_01.png, images/jo_02.png, images/jo_03.png, images/jo_04.png, images/jo_05.png, images/jo_06.png, images/jo_07.png, images/jo_08.png, images/jo_09.png, images/jo_10.png, images/jo_11.png, images/jo_12.png "
+data-desc="CJ 푸드빌 - TouslesJours Web/Mobile 운영 컨텐츠 디자인/퍼블리싱 담당하였습니다."
+data-tools="포토샵,일러스트"
+data-period="2019 ~ 2022"
+data-role="디자인,퍼블"
+data-upgrade="X"
+>
+<button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+  <span class="work-thumb work-thumb-9" aria-hidden="true"></span>
+  <span class="work-info">
+    <span class="work-title"></span>
+    <span class="work-cat"></span>
+  </span>
+</button>
+</li>
+
+<li
+class="work-item"
+data-title="CJ 대한통운 "
+data-category="Web · Content - 2019 ~ 2022"
+data-images="images/log_01.png"
+data-desc="CJ 대한통운 - Web/Mobile 프로젝트 및 이벤트 페이지 디자인 담당하였습니다."
+data-tools="포토샵,일러스트"
+data-period="20219 ~ 2022"
+data-role="디자인"
+data-upgrade="X"
+data-link="https://www.cjlogistics.com/ko/business/fulfillment"
+data-link-text="대한통운 이커머스물류"
+data-event-link="https://www.cjlogistics.com/ko/newsroom/event"
+data-event-link-text="대한통운 이벤트"
+>
+<button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+  <span class="work-thumb work-thumb-10" aria-hidden="true"></span>
+  <span class="work-info">
+    <span class="work-title"></span>
+    <span class="work-cat"></span>
+  </span>
+</button>
+</li>
+
+<li
+class="work-item"
+data-title="VIPS"
+data-category="Web · Content - 2015 ~ 2022"
+data-images="images/vips_01.png, images/vips_02.png, images/vips_03.png, images/vips_04.png, images/vips_05.png, images/vips_06.png, images/vips_07.png, images/vips_08.png, images/vips_09.png"
+data-desc="CJ 푸드빌 - 빕스 Web/Mobile 운영 컨텐츠 디자인/퍼블리싱 담당하였습니다."
+data-tools="포토샵,일러스트"
+data-period="2015 ~ 2022"
+data-role="디자인,퍼블"
+data-upgrade="X"
+>
+<button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+  <span class="work-thumb work-thumb-11" aria-hidden="true"></span>
+  <span class="work-info">
+    <span class="work-title"></span>
+    <span class="work-cat"></span>
+  </span>
+</button>
+</li>
+
+<li
+class="work-item"
+data-title="A Twosome place"
+data-category="Web · Content - 2015~ 2019"
+data-images="images/twosome_01.png,images/twosome_02.png,images/twosome_03.png,images/twosome_04.png,images/twosome_05.png,images/twosome_06.png"
+data-desc="CJ 푸드빌 - 투썸플레이스 Web/Mobile 운영 컨텐츠 디자인/퍼블리싱 담당하였습니다."
+data-tools="포토샵,일러스트"
+data-period="2015 ~ 2019"
+data-role="디자인,퍼블"
+data-upgrade="X"
+>
+<button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+  <span class="work-thumb work-thumb-12" aria-hidden="true"></span>
+  <span class="work-info">
+    <span class="work-title"></span>
+    <span class="work-cat"></span>
+  </span>
+</button>
+</li>
+
+
+
+
+
       </ul>
     </section>
 
+    <div class="work-modal" id="work-modal" hidden aria-hidden="true">
+      <div class="work-modal-dim" data-work-close tabindex="-1"></div>
+      <div
+        class="work-modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="work-modal-title"
+      >
+        <button
+          type="button"
+          class="work-modal-close"
+          data-work-close
+          aria-label="닫기"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="work-modal-layout">
+          <div class="work-modal-media">
+            <div class="work-slider">
+              <img id="work-modal-image" src="" alt="" />
+            </div>
+            <button
+              type="button"
+              class="work-slider-btn work-slider-prev"
+              data-slider-prev
+              aria-label="이전 이미지"
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              class="work-slider-btn work-slider-next"
+              data-slider-next
+              aria-label="다음 이미지"
+            >
+              ›
+            </button>
+            <p class="work-slider-count" aria-live="polite">
+              <span id="work-slider-current">1</span>
+              <span>/</span>
+              <span id="work-slider-total">1</span>
+            </p>
+          </div>
+          <div class="work-modal-copy">
+            <p class="work-modal-cat" id="work-modal-cat"></p>
+            <h3 class="work-modal-title" id="work-modal-title"></h3>
+            <p class="work-modal-desc" id="work-modal-desc"></p>
+            <dl class="work-modal-meta">
+              <div>
+                <dt>사용툴 :</dt>
+                <dd id="work-modal-tools"></dd>
+              </div>
+              <div>
+                <dt>프로젝트기간 :</dt>
+                <dd id="work-modal-period"></dd>
+              </div>
+              <div>
+                <dt>담당역할 :</dt>
+                <dd id="work-modal-role"></dd>
+              </div>
+              <div>
+                <dt>고도화 작업 :</dt>
+                <dd id="work-modal-upgrade"></dd>
+              </div>
+              <div class="work-modal-link-row" id="work-modal-link-row" hidden>
+                <dt>관련링크 :</dt>
+                <dd class="work-modal-links" id="work-modal-links"></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section id="about" class="section about">
       <div class="about-wrap">
-        <h2>About</h2>
+        <div class="about-side">
+          <h2>About</h2>
+          <img
+            class="about-photo"
+            src="images/profile.png"
+            alt="Hyunwoo 프로필 일러스트"
+            width="480"
+            height="480"
+          />
+        </div>
         <div class="about-copy">
           <p class="about-lead">
-            복잡한 기능을 단순한 화면으로 번역합니다.
+            고객과 약속을 지키는 디자이너 입니다.
           </p>
           <p>
-            리서치부터 정보구조, 인터랙션, 비주얼까지
-            한 흐름으로 설계하는 웹앱 디자이너입니다.
-            출시 가능한 완성도를 목표로 개발팀과 협업합니다.
+            리서치부터, 인터랙션, 비주얼까지
+            한 흐름으로 설계하는 Web/App 디자이너입니다.
           </p>
-          <ul class="about-tags">
-            <li>Product Design</li>
-            <li>UX Flow</li>
-            <li>UI System</li>
-            <li>Prototype</li>
-          </ul>
+          <div class="about-meta">
+            <div class="about-block">
+              <h3>Tools &amp; Tech</h3>
+              <ul class="about-tags">
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Premiere Pro</li>
+                <li>HTML/CSS</li>
+                <li>AI Tools (Midjourney, ChatGPT, Gen-AI)</li>
+              </ul>
+            </div>
+            <div class="about-block">
+              <h3>Capabilities</h3>
+              <ul class="about-caps">
+                <li>
+                  <strong>Design &amp; Prototype</strong>
+                  <span>/</span>
+                  <em>Figma, Photoshop, Illustrator</em>
+                </li>
+                <li>
+                  <strong>Code &amp; Video</strong>
+                  <span>/</span>
+                  <em>HTML, CSS, Premiere Pro</em>
+                </li>
+                <li>
+                  <strong>AI Workflow</strong>
+                  <span>/</span>
+                  <em>Generative AI, AI-assisted Design &amp; Development</em>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section contact">
       <p class="contact-label">Contact</p>
-      <h2>새로운 프로젝트를<br />이야기해요</h2>
-      <a class="contact-mail" href="mailto:hello@example.com">hello@example.com</a>
+      <a class="contact-mail">kirkhamett@naver.com</a>
+      <br>
+      <a class="contact-mail">010-9190-7813</a>
     </section>
   </main>
 
@@ -122,5 +431,7 @@
     <span>© 2026 Hyunwoo</span>
     <span>Based in Seoul</span>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
