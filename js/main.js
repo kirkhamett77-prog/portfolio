@@ -23,11 +23,22 @@
   let slideImages = [];
   let slideIndex = 0;
 
+  function assetUrl(path) {
+    const clean = String(path || "").trim();
+    if (!clean) return "";
+    if (/^(https?:|data:|\/\/)/i.test(clean)) return clean;
+    try {
+      return new URL(clean.replace(/^\.\//, ""), document.baseURI).href;
+    } catch (_) {
+      return clean;
+    }
+  }
+
   function parseImages(item) {
     const raw = item.dataset.images || item.dataset.image || "";
     return raw
       .split(",")
-      .map((src) => src.trim())
+      .map((src) => assetUrl(src))
       .filter(Boolean);
   }
 
