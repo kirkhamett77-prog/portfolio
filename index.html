@@ -62,18 +62,19 @@
         <h2>Work</h2>
         <p>Selected projects</p>
       </div>
+      <!--
+        [Work 추가]
+        1) images 폴더에 이미지 넣기
+        2) <li> 복사 후 data-* 수정 (팝업 슬라이드: data-images)
+        3) 썸네일은 css/style.css 에서 .work-thumb-N 배경으로 등록
+           HTML: class="work-thumb work-thumb-N"
+      -->
 
+      <p style="font-size: 1.2rem; font-weight: 600;">App Maintain</p>
       <ul class="work-grid">
-        <!--
-          [Work 추가]
-          1) images 폴더에 이미지 넣기
-          2) <li> 복사 후 data-* 수정 (팝업 슬라이드: data-images)
-          3) 썸네일은 css/style.css 에서 .work-thumb-N 배경으로 등록
-             HTML: class="work-thumb work-thumb-N"
-        -->
         <li
           class="work-item"
-          data-title="Orbit Pay"
+          data-title="메가MGC커피 - 모바일 앱"
           data-category="Mobile App"
           data-images="images/sample-01.svg, images/sample-02.svg, images/sample-03.svg"
           data-desc="모바일 결제 플로우를 단순화한 제품 디자인입니다. 온보딩부터 송금 완료까지 핵심 경로를 줄이고, 상태 피드백을 명확히 설계했습니다."
@@ -93,7 +94,7 @@
 
         <li
           class="work-item"
-          data-title="Nova Desk"
+          data-title="교촌치킨 - 모바일 앱"
           data-category="Mobile App"
           data-images="images/sample-04.svg, images/sample-05.svg, images/sample-02.svg"
           data-desc="SaaS 대시보드의 정보 구조를 재정리하고, 자주 쓰는 액션을 전면에 배치한 웹앱 UI입니다."
@@ -113,7 +114,7 @@
 
         <li
           class="work-item"
-          data-title="Leaf Care"
+          data-title="뚜레쥬르 - 모바일 앱"
           data-category="Mobile App"
           data-images="images/sample-03.svg, images/sample-06.svg, images/sample-01.svg"
           data-desc="케어 서비스의 예약·상담 과정을 한 흐름으로 연결한 UX 설계 프로젝트입니다."
@@ -133,7 +134,7 @@
 
         <li
           class="work-item"
-          data-title="Studio Line"
+          data-title="쉐프고 - 모바일 앱"
           data-category="Mobile App"
           data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
           data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
@@ -150,174 +151,221 @@
             </span>
           </button>
         </li>
+      </ul>
+
+      <p style="font-size: 1.2rem; font-weight: 600;">Kiosk</p>
+      <ul class="work-grid">
+        <li
+          class="work-item"
+          data-title="CJ 프레시웨이 - 키오스크"
+          data-category="Kiosk · UI/UX"
+          data-images="images/sample-02.svg, images/sample-05.svg, images/sample-01.svg"
+          data-desc="매장 주문 키오스크 UI 샘플입니다. 메뉴 탐색부터 결제 완료까지 터치 동선을 단순화한 화면 구성입니다."
+          data-tools="피그마,포토샵"
+          data-period="2025.01 ~ 2025.03"
+          data-role="디자인"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-13" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
 
         <li
-        class="work-item"
-        data-title="Studio Line"
-        data-category="Web · UI/UX"
-        data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
-        data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
-        data-tools="피그마,포토샵,프리미어"
-        data-period="2024.05 ~ 2024.08"
-        data-role="디자인,퍼블"
-        data-upgrade="O"
-      >
-        <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
-          <span class="work-thumb work-thumb-5" aria-hidden="true"></span>
-          <span class="work-info">
-            <span class="work-title"></span>
-            <span class="work-cat"></span>
-          </span>
-        </button>
-      </li>
+          class="work-item"
+          data-title="뚜레쥬르 - 키오스크"
+          data-category="Kiosk · UI/UX"
+          data-images="images/sample-06.svg, images/sample-03.svg, images/sample-04.svg"
+          data-desc="안내·발권용 키오스크 UI 샘플입니다. 큰 터치 영역과 명확한 단계 표시로 누구나 쉽게 따라갈 수 있게 설계했습니다."
+          data-tools="피그마,일러스트"
+          data-period="2024.10 ~ 2024.12"
+          data-role="디자인"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-14" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
+      </ul>
 
-      <li
-      class="work-item"
-      data-title="Studio Line"
-      data-category="Web · UI/UX"
-      data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
-      data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
-      data-tools="피그마,포토샵,프리미어"
-      data-period="2024.05 ~ 2024.08"
-      data-role="디자인,퍼블"
-      data-upgrade="O"
-    >
-      <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
-        <span class="work-thumb work-thumb-6" aria-hidden="true"></span>
-        <span class="work-info">
-          <span class="work-title"></span>
-          <span class="work-cat"></span>
-        </span>
-      </button>
-    </li>
-    <li
-    class="work-item"
-    data-title="Studio Line"
-    data-category="Web · UI/UX"
-    data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
-    data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
-    data-tools="피그마,포토샵,프리미어"
-    data-period="2024.05 ~ 2024.08"
-    data-role="디자인,퍼블"
-    data-upgrade="O"
-  >
-    <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
-      <span class="work-thumb work-thumb-7" aria-hidden="true"></span>
-      <span class="work-info">
-        <span class="work-title"></span>
-        <span class="work-cat"></span>
-      </span>
-    </button>
-  </li>
+      <p style="font-size: 1.2rem; font-weight: 600;">Web - UI/UX</p>
+      <ul class="work-grid">
+        <li
+          class="work-item"
+          data-title="계약관리시스템"
+          data-category="Web · UI/UX - 2023 ~ 2023"
+          data-images="images/de_01.png, images/de_02.png, images/de_03.png, images/de_04.png,images/de_05.png, images/de_06.png"
+          data-desc="계약관리시스템 내부망 디자인 및 퍼블리싱 담당하였습니다."
+          data-tools="포토샵,일러스트"
+          data-period="2023 ~ 2023"
+          data-role="디자인,퍼블"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-5" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
 
-  <li
-  class="work-item"
-  data-title="Studio Line"
-  data-category="Web · UI/UX"
-  data-images="images/sample-06.svg, images/sample-04.svg, images/sample-05.svg"
-  data-desc="스튜디오 브랜드 톤에 맞춘 UI 시스템과 랜딩·포트폴리오 화면을 설계했습니다."
-  data-tools="피그마,포토샵,프리미어"
-  data-period="2024.05 ~ 2024.08"
-  data-role="디자인,퍼블"
-  data-upgrade="O"
->
-  <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
-    <span class="work-thumb work-thumb-8" aria-hidden="true"></span>
-    <span class="work-info">
-      <span class="work-title"></span>
-      <span class="work-cat"></span>
-    </span>
-  </button>
-</li>
+        <li
+          class="work-item"
+          data-title="CJ 대한통운 - 이커머스물류"
+          data-category="Web · UI/UX - 2021 ~ 2021"
+          data-images="images/lo_e_01.png, images/lo_e_02.png"
+          data-desc="대한통운 이커머스물류 페이지를 디자인 및 퍼블리싱 담당하였습니다."
+          data-tools="포토샵,프리미어"
+          data-period="2021 ~ 2021"
+          data-role="디자인,퍼블"
+          data-upgrade="X"
+          data-link="https://www.cjlogistics.com/ko/business/fulfillment"
+          data-link-text="대한통운 이커머스물류"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-6" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
 
-<li
-class="work-item"
-data-title="Tous les Jours"
-data-category="Web · Content - 2019 ~ 2022"
-data-images="images/jo_01.png, images/jo_02.png, images/jo_03.png, images/jo_04.png, images/jo_05.png, images/jo_06.png, images/jo_07.png, images/jo_08.png, images/jo_09.png, images/jo_10.png, images/jo_11.png, images/jo_12.png "
-data-desc="CJ 푸드빌 - TouslesJours Web/Mobile 운영 컨텐츠 디자인/퍼블리싱 담당하였습니다."
-data-tools="포토샵,일러스트"
-data-period="2019 ~ 2022"
-data-role="디자인,퍼블"
-data-upgrade="X"
->
-<button type="button" class="work-card" data-work-open aria-haspopup="dialog">
-  <span class="work-thumb work-thumb-9" aria-hidden="true"></span>
-  <span class="work-info">
-    <span class="work-title"></span>
-    <span class="work-cat"></span>
-  </span>
-</button>
-</li>
+        <li
+          class="work-item"
+          data-title="Juice Solution"
+          data-category="Web · UI/UX - 2019 ~ 2019"
+          data-images="images/ju_01.png, images/ju_02.png, images/ju_03.png"
+          data-desc="CJ푸드빌 - 쥬스솔루션 브랜드 런칭으로 인한 홈페이지 제작을 하였습니다."
+          data-tools="포토샵,퍼블"
+          data-period="2019 ~ 2019"
+          data-role="디자인,퍼블"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-7" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
 
-<li
-class="work-item"
-data-title="CJ 대한통운 "
-data-category="Web · Content - 2019 ~ 2022"
-data-images="images/log_01.png"
-data-desc="CJ 대한통운 - Web/Mobile 프로젝트 및 이벤트 페이지 디자인 담당하였습니다."
-data-tools="포토샵,일러스트"
-data-period="20219 ~ 2022"
-data-role="디자인"
-data-upgrade="X"
-data-link="https://www.cjlogistics.com/ko/business/fulfillment"
-data-link-text="대한통운 이커머스물류"
-data-event-link="https://www.cjlogistics.com/ko/newsroom/event"
-data-event-link-text="대한통운 이벤트"
->
-<button type="button" class="work-card" data-work-open aria-haspopup="dialog">
-  <span class="work-thumb work-thumb-10" aria-hidden="true"></span>
-  <span class="work-info">
-    <span class="work-title"></span>
-    <span class="work-cat"></span>
-  </span>
-</button>
-</li>
+        <li
+          class="work-item"
+          data-title="CJ 제일제당 - 자산관리(PDA)"
+          data-category="Web · UI/UX - 2023 ~ 2023"
+          data-images="images/pda_01.png, images/pda_02.png, images/pda_03.png, images/pda_04.png"
+          data-desc="블라썸파크 내부 자산관리시스템 제작 디자인 담당하였습니다."
+          data-tools="포토샵,일러스트"
+          data-period="2023 ~ 2023"
+          data-role="디자인"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-8" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
+      </ul>
 
-<li
-class="work-item"
-data-title="VIPS"
-data-category="Web · Content - 2015 ~ 2022"
-data-images="images/vips_01.png, images/vips_02.png, images/vips_03.png, images/vips_04.png, images/vips_05.png, images/vips_06.png, images/vips_07.png, images/vips_08.png, images/vips_09.png"
-data-desc="CJ 푸드빌 - 빕스 Web/Mobile 운영 컨텐츠 디자인/퍼블리싱 담당하였습니다."
-data-tools="포토샵,일러스트"
-data-period="2015 ~ 2022"
-data-role="디자인,퍼블"
-data-upgrade="X"
->
-<button type="button" class="work-card" data-work-open aria-haspopup="dialog">
-  <span class="work-thumb work-thumb-11" aria-hidden="true"></span>
-  <span class="work-info">
-    <span class="work-title"></span>
-    <span class="work-cat"></span>
-  </span>
-</button>
-</li>
+      <p style="font-size: 1.2rem; font-weight: 600;">Web - Content</p>
+      <ul class="work-grid">
+        <li
+          class="work-item"
+          data-title="Tous les Jours"
+          data-category="Web · Content - 2019 ~ 2022"
+          data-images="images/jo_01.png, images/jo_02.png, images/jo_03.png, images/jo_04.png, images/jo_05.png, images/jo_06.png, images/jo_07.png, images/jo_08.png, images/jo_09.png, images/jo_10.png, images/jo_11.png, images/jo_12.png "
+          data-desc="CJ 푸드빌 - TouslesJours Web/Mobile 운영 컨텐츠 디자인/퍼블리싱 담당하였습니다."
+          data-tools="포토샵,일러스트"
+          data-period="2019 ~ 2022"
+          data-role="디자인,퍼블"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-9" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
 
-<li
-class="work-item"
-data-title="A Twosome place"
-data-category="Web · Content - 2015~ 2019"
-data-images="images/twosome_01.png,images/twosome_02.png,images/twosome_03.png,images/twosome_04.png,images/twosome_05.png,images/twosome_06.png"
-data-desc="CJ 푸드빌 - 투썸플레이스 Web/Mobile 운영 컨텐츠 디자인/퍼블리싱 담당하였습니다."
-data-tools="포토샵,일러스트"
-data-period="2015 ~ 2019"
-data-role="디자인,퍼블"
-data-upgrade="X"
->
-<button type="button" class="work-card" data-work-open aria-haspopup="dialog">
-  <span class="work-thumb work-thumb-12" aria-hidden="true"></span>
-  <span class="work-info">
-    <span class="work-title"></span>
-    <span class="work-cat"></span>
-  </span>
-</button>
-</li>
+        <li
+          class="work-item"
+          data-title="CJ 대한통운 - EVENT"
+          data-category="Web · Content - 2019 ~ 2022"
+          data-images="images/log_01.png, images/log_02.png"
+          data-desc="CJ 대한통운 - Web/Mobile 이벤트 페이지 디자인 담당하였습니다."
+          data-tools="포토샵,일러스트"
+          data-period="20219 ~ 2022"
+          data-role="디자인"
+          data-upgrade="X"
+          data-link="https://www.cjlogistics.com/ko/business/fulfillment"
+          data-link-text="대한통운 이커머스물류"
+          data-event-link="https://www.cjlogistics.com/ko/newsroom/event"
+          data-event-link-text="대한통운 이벤트"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-10" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
 
+        <li
+          class="work-item"
+          data-title="VIPS"
+          data-category="Web · Content - 2015 ~ 2022"
+          data-images="images/vips_01.png, images/vips_02.png, images/vips_03.png, images/vips_04.png, images/vips_05.png, images/vips_06.png, images/vips_07.png, images/vips_08.png, images/vips_09.png"
+          data-desc="CJ 푸드빌 - 빕스 Web/Mobile 운영 컨텐츠 디자인/퍼블리싱 담당하였습니다."
+          data-tools="포토샵,일러스트"
+          data-period="2015 ~ 2022"
+          data-role="디자인,퍼블"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-11" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
 
-
-
-
+        <li
+          class="work-item"
+          data-title="A Twosome place"
+          data-category="Web · Content - 2015~ 2019"
+          data-images="images/twosome_01.png,images/twosome_02.png,images/twosome_03.png,images/twosome_04.png,images/twosome_05.png,images/twosome_06.png"
+          data-desc="CJ 푸드빌 - 투썸플레이스 Web/Mobile 운영 컨텐츠 디자인/퍼블리싱 담당하였습니다."
+          data-tools="포토샵,일러스트"
+          data-period="2015 ~ 2019"
+          data-role="디자인,퍼블"
+          data-upgrade="X"
+        >
+          <button type="button" class="work-card" data-work-open aria-haspopup="dialog">
+            <span class="work-thumb work-thumb-12" aria-hidden="true"></span>
+            <span class="work-info">
+              <span class="work-title"></span>
+              <span class="work-cat"></span>
+            </span>
+          </button>
+        </li>
       </ul>
     </section>
 
