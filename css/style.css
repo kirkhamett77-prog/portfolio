@@ -303,8 +303,8 @@ body.is-modal-open {
 /* 썸네일 이미지 등록: 새 Work 추가 시 .work-thumb-N 추가 */
 .work-thumb-1 { background-image: url("../images/sample-01.svg"); }
 .work-thumb-2 { background-image: url("../images/sample-04.svg"); }
-.work-thumb-3 { background-image: url("../images/sample-03.svg"); }
-.work-thumb-4 { background-image: url("../images/sample-06.svg"); }
+.work-thumb-3 { background-image: url("../images/tlj.png"); }
+.work-thumb-4 { background-image: url("../images/chf.png"); }
 .work-thumb-5 { background-image: url("../images/de.png"); }
 .work-thumb-6 { background-image: url("../images/lo_e.png"); }
 .work-thumb-7 { background-image: url("../images/ju.png"); }
@@ -313,8 +313,9 @@ body.is-modal-open {
 .work-thumb-10 { background-image: url("../images/log.png"); }
 .work-thumb-11 { background-image: url("../images/vips.png"); }
 .work-thumb-12 { background-image: url("../images/twosome.png"); }
-.work-thumb-13 { background-image: url("../images/sample-02.svg"); }
-.work-thumb-14 { background-image: url("../images/sample-05.svg"); }
+/* Kiosk */
+.work-thumb-13 { background-image: url("../images/ko_fr.png"); }   /* CJ 프레시웨이 */
+.work-thumb-14 { background-image: url("../images/ko_t.png"); } /* 뚜레쥬르 */
 
 .work-thumb.is-no-img::after,
 .work-modal-media.is-no-img::after {
