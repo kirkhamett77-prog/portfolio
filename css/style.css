@@ -302,7 +302,7 @@ body.is-modal-open {
 
 /* 썸네일 이미지 등록: 새 Work 추가 시 .work-thumb-N 추가 */
 .work-thumb-1 { background-image: url("../images/me.png"); }
-.work-thumb-2 { background-image: url("../images/sample-04.svg"); }
+.work-thumb-2 { background-image: url("../images/ck.png"); }
 .work-thumb-3 { background-image: url("../images/tlj.png"); }
 .work-thumb-4 { background-image: url("../images/chf.png"); }
 .work-thumb-5 { background-image: url("../images/de.png"); }
